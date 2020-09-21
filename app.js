@@ -1,13 +1,12 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 5000;
 
 const path = require('path')
 const ejs = require('ejs')
 
-// HEROKU
-var static = require('node-static');
-var file = new static.Server('index');
+app.use(express.json());
+
 
 
 //Join public folder
@@ -22,8 +21,6 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res) => {
   res.render('index')
 })
-
-
 
 
 //Start server
