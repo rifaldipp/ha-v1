@@ -1,0 +1,276 @@
+/* Initialitations */
+    body {
+        padding-top: 3rem;
+        /* padding-bottom: 3rem; */
+        color: #5a5a5a;
+    }
+
+    /* sizeing per-section */
+    section{
+        padding-top: 6%;
+    }
+
+    /* animation scrol smooth */
+    html {
+        scroll-behavior:smooth;
+    }
+
+    /* shadow h5 */
+    h5{
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* set footer */
+    footer {
+        background-color: var(--blueHappilyafter);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      footer p {
+          color: white;
+          margin:0 auto;
+      }
+
+    /* deklarasi */
+    :root{
+        /* color */
+        --blueHappilyafter:#11456B;
+
+
+
+        /* font */
+        --fg-neue: 'Bebas Neue', cursive;
+        --fg-roboto: 'Roboto', sans-serif;
+    }
+
+
+/* Google Font-embeded */
+    .fg-neue {
+        font-family: 'Bebas Neue', cursive;
+    }
+    .fg-roboto{
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+    /* device pixel 640 */
+    @media (min-width: 40em) {
+        /* Bump up size of carousel content */
+        .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        }
+
+        /* Product */
+            /* set text product */
+            #product .text-product{
+                position: absolute;
+                top: 65em;
+            }
+
+    }
+        /* device pixel 768 */
+        @media (max-width: 48em) and (orientation: portrait) {
+            /*init */
+            section{
+                padding-top: 25%;
+            }
+
+            /* navbar */
+                /* navbar logo */
+                .navbar-brand {
+                    padding-bottom: 1rem !important; 
+                }
+
+
+            /* Product */
+                /* set text product */
+                #product .text-product{
+                    position: absolute;
+                    top: 67em;
+                }
+                  
+          
+        }
+        @media (max-width: 48em) and (orientation: landscape) {
+            section{
+                padding-top: 15%;
+            }
+
+            /* navbar */
+                /* navbar logo */
+                .navbar-brand {
+                    padding-bottom: 1rem !important; 
+                }
+
+            /* Product */
+                /* set text product */
+                #product .text-product{
+                    position: absolute;
+                    top: 67em;
+                }
+          
+        }
+
+   
+
+
+    /* device pixel 992 */
+    @media (min-width: 62em) {
+
+        /* navbar */
+            /* navbar-link underline white */
+            .navbar-nav .nav-link:hover::after {
+                content: '';
+                display: block;
+                border-bottom: 2px solid #ffffff;
+                width: 50%;
+                margin: auto;
+                padding-bottom: 5px;
+                margin-bottom: -8px;
+
+                animation-name: animasi_underline;
+                animation-duration: .2s;
+            }
+                @keyframes animasi_underline {
+                    0%{width:0%}
+                    25%{width: 15%;}
+                    50%{width: 30%;}
+                    75%{width: 45%;}
+                    100%{width:50%;}
+                }
+
+
+        /* Product */
+            /* set text product */
+            #product .text-product{
+                position: absolute;
+                top: 63.5em;
+            }
+                #product .carddeck{
+                    margin-top: 50px;
+                }
+    }
+
+
+
+/* ==== UTILITIES */
+  
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+    /* background color navbar */
+    #navbar-custom .bg-info{
+        background-color: var(--blueHappilyafter) !important;
+    }
+
+    /* font navbar link */
+    #navbar-custom .nav-link{
+        margin-right: 10px;
+    }
+    #navbar-custom .nav-item a{
+        font-size: 1.2rem;
+    }
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+    /* Carousel base class */
+    /* .carousel {
+        margin-bottom: 4rem;
+    } */
+
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Declare background element */
+    #myCarousel .imgslider1-custom{
+        background-color:transparent;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+        height: 35rem;
+    }
+        .carousel-item > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 35rem;
+        }
+
+    /* Button carousel custom */
+    #myCarousel .btn-info {
+        color: #fff;
+        background-color:var(--blueHappilyafter);
+        border-color: #ffff;
+    }
+        #myCarousel .btn-info:hover {
+            color: black;
+            background-color: #ffff;
+            border-color: var(--blueHappilyafter);
+            transition: .5s;
+        }
+        #myCarousel .btn-lg {
+            border-radius: 10rem;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            
+        }
+      
+/* CUSTOMIZE THE ABOUT
+-------------------------------------------------- */   
+    
+    /* oval transfarent */
+    #about .oval {
+        height: 10rem;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 50%;
+
+        position: absolute;
+        left: 0px;
+        top: -4.8rem;
+    }
+        /* dimensi atribut */
+        #about .paragraf {
+            z-index: 10;
+        }
+        #about .contact {
+            z-index: 10;
+        }
+
+
+
+
+/* CUSTOMIZE THE PRODUCT
+-------------------------------------------------- */
+    /* basic */
+    .product{
+        background-color:#DEEEF4;
+    }
+
+    /* hover header card */
+    #product .card{
+        transition: transform .3s
+    }
+        #product .card:hover{
+            transform: scale(1.1);
+        }
+
+    /* underline hr */
+    #product hr{
+        width: 40%;
+    }
+  
+
+   

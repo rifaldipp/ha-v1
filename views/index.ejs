@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" id="home">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Rifaldi Perdana Putra and Bootstrap contributors">
+    <title>Happily After</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="/img/logo1.png">
+    <title>Hello, world!</title>
+  </head>
+
+
+  <body>
+    <%- include('components/navbar'); -%>
+    <main role="main">
+        <%- include('components/carousel'); -%>
+        <%- include('components/about'); -%>
+        <%- include('components/product'); -%>
+        <%- include('components/portofolio'); -%>     
+        
+        <%- include('components/footer'); -%> 
+        
+    </main>
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <script src="/js/main.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
